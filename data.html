@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<form action= "output.php" method="post" enctype="multipart/form-data">
+		<tr>
+			<td>Nama Pembeli :
+				<br><input type="text" name="nama[]">
+			</td>
+		</tr><br><br>
+		<tr>
+			<td>Tanggal Pembelilan :
+				<br><input type="text" name="tanggal[]">
+			</td>
+		</tr><br><br>
+
+		<tr>
+			<td>Daftar Barang Belanjaan : <br>
+				<input type="checkbox" name="daftar[]" value="Baju">Baju  <br>
+				<input type="checkbox" name="daftar[]" value="Celana">Celana <br>
+				<input type="checkbox" name="daftar[]" value="Tas">Tas <br>
+				<input type="checkbox" name="daftar[]" value="Sepatu ">Sepatu<br>
+			</td>
+		</tr><br>
+
+		<tr>
+			<td>Jenis Pengiriman : 
+					<br><input type="radio" name="myradio[]" value="Kantor Pos"> Kantor Pos
+					<br><input type="radio" name="myradio[]" value="JNA">JNA
+					<br><input type="radio" name="myradio[]" value="TIKI">TIKI
+					<br><input type="radio" name="myradio[]" value="Express">Express
+
+				
+			</td>
+		</tr><br><br>
+
+		<tr>
+			<td>Alamat :
+				<input type="text" name="alamat[]">
+			</td>
+		</tr>
+
+		<tr>
+			<td><br><br><input type="submit" value="Submit" name="save"></td>
+		</tr>
+
+	</form>
+
+</body>
+</html>
